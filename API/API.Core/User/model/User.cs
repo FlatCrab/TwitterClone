@@ -11,7 +11,7 @@ public class User
     [Required]
     [MaxLength(50, ErrorMessageResourceType = typeof(UsernameTooLongException))]
     [MinLength(5, ErrorMessageResourceType = typeof(UsernameTooShortException))]
-    public string Username { get; set; } // Non-unique display name
+    public string Name { get; set; } // Non-unique display name
     
     [MaxLength(50, ErrorMessageResourceType = typeof(UsernameTooLongException))]
     [MinLength(5, ErrorMessageResourceType = typeof(UsernameTooShortException))]
