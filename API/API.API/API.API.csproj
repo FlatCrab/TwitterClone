@@ -18,4 +18,8 @@
         <PackageReference Include="Grpc.Net.Client.Web" Version="2.76.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\API.Infrastructure\API.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

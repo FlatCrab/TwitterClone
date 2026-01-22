@@ -1,12 +1,13 @@
 using API;
+using API.Infrastructure.Utils;
 using API.Services;
-using Grpc.Net.Client;
-using Grpc.Net.Client.Web;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddGrpc();
+builder.Services.AddSingleton(typeof(RequestCoalescer<,>));
 builder.Services.AddCors(o => o.AddPolicy("AllowAll", builder =>
 {
     builder.AllowAnyOrigin()
