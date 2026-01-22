@@ -13,7 +13,6 @@
       <Folder Include="Post\dtos\" />
       <Folder Include="Post\usecases\" />
       <Folder Include="User\dtos\" />
-      <Folder Include="User\interfaces\" />
       <Folder Include="User\usecases\" />
     </ItemGroup>
 

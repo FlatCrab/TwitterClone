@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata;
 
-namespace API.Core.Entities;
+namespace API.Core.Post;
 
 public class Post
 {
@@ -15,9 +15,7 @@ public class Post
     
     public long Likes { get; set; } = 0;
 
-    [MinLength(1)]
-    [MaxLength(700)]
-    public string Content { get; set; }
+    [MaxLength(700)] public string Content { get; set; } = String.Empty;
     
     public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
     
