@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Comment\dtos\" />
+      <Folder Include="Comment\interfaces\" />
+      <Folder Include="Comment\usecases\" />
+      <Folder Include="Post\dtos\" />
+      <Folder Include="Post\usecases\" />
+      <Folder Include="User\dtos\" />
+      <Folder Include="User\interfaces\" />
+      <Folder Include="User\usecases\" />
+    </ItemGroup>
+
+</Project>
